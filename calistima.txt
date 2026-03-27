@@ -1,0 +1,38 @@
+1-indirme : curl -fsSL https://ollama.com/install.sh | sh.    : bunu sadece 1 kere yapıcaksın
+
+2- run ollama : ollama run llama3
+
+3-pip install -r requirements.txt ile kur:
+
+langchain
+langchain-ollama
+langchain-huggingface
+chromadb
+pypdf
+streamlit
+
+3-pip install langchain-community
+3-pip install langchain-community langchain-ollama langchain-huggingface chromadb pypdf sentence-transformers
+4- streamlit run app.py
+
+
+veri tabanı sıfırlama 
+rm -rf db/
+
+
+1- YÜKLE 
+2- SORU SOR 
+
+
+
+docker için 
+1-
+docker build --no-cache -t ai-enterprise-rag-system .
+2-
+docker rm -f rag-app
+docker run -it -p 8501:8501 --name rag-app ai-enterprise-rag-system
+
+
+olucak ve docker istemezsen  llm = OllamaLLM(model="llama3.1", temperature=0.1, base_url="http://host.docker.internal:11434")
+base_url kısmını direk silersin 
+
