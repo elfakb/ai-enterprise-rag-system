@@ -89,5 +89,3 @@ streamlit run app.py
     <img src="images/image copy 3.png" width="45%" alt="Source Attribution">
 </div>
 
-
-### Short Demo
