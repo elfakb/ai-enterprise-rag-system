@@ -1,44 +1,43 @@
-
 # 🦙 **Enterprise Knowledge Base (RAG)**
 
-Kurumsal dokümanları anlayan, sorgulanabilir yapay zekâ tabanlı uygulama.
+An AI-powered enterprise system that understands organizational documents and makes them searchable.
 
 ---
 
 ## **Overview**
 
-Bu proje; şirket içi teknik dokümanları işleyip kullanıcının soru sorarak arama yapmasını sağlayan bir **RAG tabanlı kurumsal bilgi uygulamasıdır**.
-LLM + vektör veritabanı sayesinde doğru, hızlı ve bağlama duyarlı cevaplar üretir.
+This project is a **RAG-based enterprise knowledge application** that processes internal technical documents and enables users to query them through natural language.
+Using an LLM + vector database, it provides accurate, fast, and context-aware responses.
 
 ---
 
 ## **Problem**
 
-Kurumsal şirketlerde çalışanlar günlük olarak yüzlerce sayfa dokümanı incelemek zorunda kalır.
-Bilgi dağınık, arama zor ve yanıt bulmak zaman alıcıdır.
-**Tek bir bilgi kaynağı yoktur → verimlilik düşer.**
+Employees in large organizations are required to review hundreds of pages of documentation daily.
+Information is scattered, difficult to search, and time-consuming to access.
+There is **no single source of truth → productivity decreases.**
 
 ---
 
 ## **Solution**
 
-Bu proje şirket içi tüm dokümanları toplar, işler ve vektör veritabanına ekler.
-Kullanıcı doğal dilde soru sorduğunda sistem:
+This system collects all internal documents, processes them, and stores them in a vector database.
+When a user asks a natural-language question, the system:
 
-1. Sorguya göre en alakalı doküman parçalarını bulur,
-2. LLM’e gönderir,
-3. Kaynağa dayalı güvenilir cevap üretir.
+1. Retrieves the most relevant document chunks,
+2. Sends them to the LLM,
+3. Produces a grounded, reliable answer.
 
 ---
 
-##**Architecture**
+## **Architecture**
 
 * LangChain pipeline
 * Embedding Model: `all-MiniLM-L6-v2`
-* LLM: Llama 
-* Vector DB: ChromaDB 
+* LLM: Llama
+* Vector DB: ChromaDB
 * Containerization: Docker
-* Frontend: Streamlit 
+* Frontend: Streamlit
 
 ---
 
@@ -50,8 +49,7 @@ Kullanıcı doğal dilde soru sorduğunda sistem:
 * **ChromaDB / Pinecone**
 * **HuggingFace Embeddings**
 * **Docker**
-* **Streamlit** (UI için opsiyonel)
-
+* **Streamlit** (optional UI)
 
 ---
 
